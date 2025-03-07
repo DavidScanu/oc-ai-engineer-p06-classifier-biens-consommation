@@ -29,8 +29,6 @@ Cette mission implique également la mise en œuvre de diverses approches pour l
 
 ## 🎯 Objectifs pédagogiques
 
-Durant ce projet, je vais :
-
 - **Prétraiter des données textuelles et des images** pour les rendre exploitables
 - **Mettre en œuvre différentes techniques d'extraction de features** adaptées aux types de données
 - **Évaluer la faisabilité** d'un regroupement automatique par catégorie
