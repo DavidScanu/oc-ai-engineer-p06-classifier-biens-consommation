@@ -1,1 +1,143 @@
-# oc-ai-engineer-p06-classifier-biens-consommation
+# Projet 6 - Classifiez automatiquement des biens de consommation
+
+> 🎓 OpenClassrooms • Parcours [AI Engineer](https://openclassrooms.com/fr/paths/795-ai-engineer) | 👋 *Étudiant* : [David Scanu](https://www.linkedin.com/in/davidscanu14/)
+
+## 📝 Contexte
+
+Dans le cadre de ma formation de Data Scientist chez OpenClassrooms, ce projet s'inscrit dans un scénario professionnel où j'interviens en tant que Data Scientist au sein de l'entreprise "Place de marché", qui souhaite lancer une marketplace e-commerce.
+
+Sur cette place de marché anglophone, des vendeurs proposent des articles à des acheteurs en postant une photo et une description. Pour l'instant, l'attribution de la catégorie d'un article est effectuée manuellement par les vendeurs, et est donc peu fiable. De plus, le volume des articles est pour l'instant très petit.
+
+La mission consiste à développer un moteur de classification automatique d'articles basé sur les images et les descriptions textuelles, afin d'améliorer l'expérience utilisateur des vendeurs et des acheteurs.
+
+## ⚡ Mission
+
+> Développer un moteur de classification automatique d'articles basé sur les images et les descriptions textuelles.
+
+Réaliser une étude de faisabilité complète comprenant :
+
+1. **Prétraitement des données texte et image** : Nettoyage et préparation des données
+2. **Extraction de features** : Approches diverses pour texte et images
+3. **Analyse de faisabilité** : Réduction dimensionnelle et visualisation, mesure de similarité
+4. **Classification supervisée** : Implémentation d'un modèle de classification d'images
+5. **Test d'API** : Extraction de données de produits via l'API OpenFood Facts
+
+Cette mission implique également la mise en œuvre de diverses approches pour l'extraction de features :
+
+- **Pour les images** : Algorithmes SIFT/ORB/SURF et CNN Transfer Learning
+- **Pour les textes** : Bag-of-words, TF-IDF, Word2Vec/Glove/FastText, BERT, et Universal Sentence Encoder
+
+## 🎯 Objectifs pédagogiques
+
+Durant ce projet, je vais :
+
+- **Prétraiter des données textuelles et des images** pour les rendre exploitables
+- **Mettre en œuvre différentes techniques d'extraction de features** adaptées aux types de données
+- **Évaluer la faisabilité** d'un regroupement automatique par catégorie
+- **Implémenter une classification supervisée d'images** avec data augmentation
+- **Interagir avec une API externe** pour récupérer des données structurées
+- **Préparer une présentation détaillée** pour communiquer les résultats
+
+## 🗓️ Plan de travail
+
+1. **Analyse et préparation des données**
+   - Exploration du jeu de données (images et descriptions)
+   - Prétraitement des textes (nettoyage, tokenisation)
+   - Prétraitement des images (redimensionnement, normalisation)
+
+2. **Extraction des features**
+   - Features texte : implémentation des approches bag-of-words, TF-IDF, Word2Vec, BERT, USE
+   - Features image : implémentation des algorithmes SIFT/ORB/SURF et CNN Transfer Learning
+
+3. **Étude de faisabilité**
+   - Réduction dimensionnelle en 2D (PCA, t-SNE, UMAP)
+   - Visualisation graphique des produits par catégorie
+   - Mesure de similarité entre catégories réelles et clusters
+
+4. **Classification supervisée d'images**
+   - Implémentation de data augmentation
+   - Entraînement d'un modèle de classification d'images
+   - Évaluation des performances
+
+5. **Test de l'API OpenFood Facts**
+   - Développement d'un script pour l'extraction de produits
+   - Création d'un fichier CSV avec les données structurées
+
+6. **Préparation de la présentation**
+   - Synthèse des résultats et des méthodes
+   - Visualisations pertinentes
+   - Création du support de présentation
+
+## 📦 Livrables
+
+1. **Notebook(s) de prétraitement et feature extraction**
+   - Code de prétraitement des données texte et image
+   - Implémentation des différentes méthodes d'extraction de features
+   - Visualisations et résultats de l'étude de faisabilité
+
+2. **Notebook de classification supervisée des images**
+   - Implémentation de data augmentation
+   - Code d'entraînement et d'évaluation du modèle
+   - Résultats de la classification
+
+3. **Script Python de test de l'API**
+   - Code pour interagir avec l'API OpenFood Facts
+   - Extraction des 10 premiers produits à base de "champagne"
+   - Fichier CSV contenant les données structurées
+
+4. **Support de présentation**
+   - Méthodologie et résultats de l'étude de faisabilité
+   - Analyse de la classification supervisée
+   - Présentation du test de l'API
+
+## 🔧 Technologies utilisées
+
+- **Langages** : Python
+- **Bibliothèques Data Science** : NumPy, Pandas, Scikit-learn
+- **Traitement d'images** : OpenCV, PIL, Matplotlib
+- **Traitement texte** : NLTK, SpaCy, Gensim
+- **Deep Learning** : TensorFlow/Keras, PyTorch
+- **NLP avancé** : BERT, Universal Sentence Encoder
+- **Visualisation** : Matplotlib, Seaborn, Plotly
+- **API** : Requests, JSON
+
+## 🔄 Installation et utilisation
+
+### Prérequis
+
+```bash
+# Cloner le dépôt
+git clone https://github.com/DavidScanu/oc-ai-engineer-p06-classifier-biens-consommation.git
+cd oc-ai-engineer-p06-classifier-biens-consommation
+
+# Créer un environnement virtuel 
+python -m venv env
+source env/bin/activate  # Sur Windows: env\Scripts\activate
+
+# Installer les dépendances
+pip install -r requirements.txt
+```
+
+### Structure du projet
+```
+project-marketplace-classification/
+├── notebooks/                          # Notebooks Jupyter
+│   ├── 1_pretraitement_features.ipynb  # Prétraitement et extraction de features
+│   ├── 2_classification_images.ipynb   # Classification supervisée d'images
+│   └── 3_api_openfood.ipynb            # Test de l'API OpenFood Facts
+├── data/                               # Données du projet
+│   ├── raw/                            # Données brutes
+│   ├── processed/                      # Données prétraitées
+│   └── extracted/                      # Données extraites de l'API
+├── scripts/                            # Scripts Python
+│   └── api_openfood.py                 # Script d'extraction via API
+├── output/                             # Résultats et visualisations
+├── models/                             # Modèles entraînés
+├── presentation/                       # Support de présentation
+├── requirements.txt                    # Dépendances
+└── README.md                           # Documentation
+```
+
+---
+
+Projet réalisé dans le cadre de la formation **AI Engineer** d'OpenClassrooms (2025).
