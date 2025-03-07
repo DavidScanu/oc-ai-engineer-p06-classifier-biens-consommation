@@ -1,0 +1,1 @@
+# oc-ai-engineer-p06-classifier-biens-consommation
