@@ -4,11 +4,9 @@
 
 ## 📝 Contexte
 
-Dans le cadre de ma formation de Data Scientist chez OpenClassrooms, ce projet s'inscrit dans un scénario professionnel où j'interviens en tant que Data Scientist au sein de l'entreprise "Place de marché", qui souhaite lancer une marketplace e-commerce.
+Dans le cadre de ma formation de [AI Engineer chez OpenClassrooms](https://openclassrooms.com/fr/paths/795-ai-engineer), ce projet s'inscrit dans un scénario professionnel où j'interviens en tant que Data Scientist au sein de l'entreprise **"Place de marché"**, qui souhaite lancer une marketplace e-commerce.
 
-Sur cette place de marché anglophone, des vendeurs proposent des articles à des acheteurs en postant une photo et une description. Pour l'instant, l'attribution de la catégorie d'un article est effectuée manuellement par les vendeurs, et est donc peu fiable. De plus, le volume des articles est pour l'instant très petit.
-
-La mission consiste à développer un moteur de classification automatique d'articles basé sur les images et les descriptions textuelles, afin d'améliorer l'expérience utilisateur des vendeurs et des acheteurs.
+Sur cette place de marché anglophone, des vendeurs proposent des articles à des acheteurs en postant **une photo et une description**. Pour l'instant, l'attribution de la catégorie d'un article est effectuée manuellement par les vendeurs, et est donc peu fiable. De plus, le volume des articles est pour l'instant très petit.
 
 ## ⚡ Mission
 
@@ -18,14 +16,11 @@ Réaliser une étude de faisabilité complète comprenant :
 
 1. **Prétraitement des données texte et image** : Nettoyage et préparation des données
 2. **Extraction de features** : Approches diverses pour texte et images
+   - **Pour les images** : Algorithmes SIFT/ORB/SURF et CNN Transfer Learning
+   - **Pour les textes** : Bag-of-words, TF-IDF, Word2Vec/Glove/FastText, BERT, et Universal Sentence Encoder
 3. **Analyse de faisabilité** : Réduction dimensionnelle et visualisation, mesure de similarité
 4. **Classification supervisée** : Implémentation d'un modèle de classification d'images
 5. **Test d'API** : Extraction de données de produits via l'API OpenFood Facts
-
-Cette mission implique également la mise en œuvre de diverses approches pour l'extraction de features :
-
-- **Pour les images** : Algorithmes SIFT/ORB/SURF et CNN Transfer Learning
-- **Pour les textes** : Bag-of-words, TF-IDF, Word2Vec/Glove/FastText, BERT, et Universal Sentence Encoder
 
 ## 🎯 Objectifs pédagogiques
 
