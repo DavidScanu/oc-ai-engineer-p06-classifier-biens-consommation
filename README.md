@@ -63,17 +63,17 @@ Réaliser une étude de faisabilité complète comprenant :
 
 ## 📦 Livrables
 
-1. **Notebook(s) de prétraitement et feature extraction**
+1. [Notebook 1 : Etude de faisabilité d'un moteur de classification automatique d'articles | Colab](https://colab.research.google.com/drive/11NzDz7Wy2MKWHrmCsNwvC14Z4gTM75Xe?usp=sharing)
    - Code de prétraitement des données texte et image
    - Implémentation des différentes méthodes d'extraction de features
    - Visualisations et résultats de l'étude de faisabilité
 
-2. **Notebook de classification supervisée des images**
+2. [Notebook 2 : Classification supervisée d'images avec data augmentation | Colab](https://colab.research.google.com/drive/1MWZzFIE2hwoj35tkJy9pA0d76buZYDxb?usp=sharing)
    - Implémentation de data augmentation
    - Code d'entraînement et d'évaluation du modèle
    - Résultats de la classification
 
-3. **Script Python de test de l'API**
+3. [Script Python de test de l'API Openfoodfacts](openfoodfacts/produits_champagne.py)
    - Code pour interagir avec l'API OpenFood Facts
    - Extraction des 10 premiers produits à base de "champagne"
    - Fichier CSV contenant les données structurées
@@ -88,48 +88,11 @@ Réaliser une étude de faisabilité complète comprenant :
 - **Langages** : Python
 - **Bibliothèques Data Science** : NumPy, Pandas, Scikit-learn
 - **Traitement d'images** : OpenCV, PIL, Matplotlib
-- **Traitement texte** : NLTK, SpaCy, Gensim
+- **Traitement texte** : NLTK, SpaCy
 - **Deep Learning** : TensorFlow/Keras, PyTorch
 - **NLP avancé** : BERT, Universal Sentence Encoder
 - **Visualisation** : Matplotlib, Seaborn, Plotly
 - **API** : Requests, JSON
-
-## 🔄 Installation et utilisation
-
-### Prérequis
-
-```bash
-# Cloner le dépôt
-git clone https://github.com/DavidScanu/oc-ai-engineer-p06-classifier-biens-consommation.git
-cd oc-ai-engineer-p06-classifier-biens-consommation
-
-# Créer un environnement virtuel 
-python -m venv env
-source env/bin/activate  # Sur Windows: env\Scripts\activate
-
-# Installer les dépendances
-pip install -r requirements.txt
-```
-
-### Structure du projet
-```
-project-marketplace-classification/
-├── notebooks/                          # Notebooks Jupyter
-│   ├── 1_pretraitement_features.ipynb  # Prétraitement et extraction de features
-│   ├── 2_classification_images.ipynb   # Classification supervisée d'images
-│   └── 3_api_openfood.ipynb            # Test de l'API OpenFood Facts
-├── data/                               # Données du projet
-│   ├── raw/                            # Données brutes
-│   ├── processed/                      # Données prétraitées
-│   └── extracted/                      # Données extraites de l'API
-├── scripts/                            # Scripts Python
-│   └── api_openfood.py                 # Script d'extraction via API
-├── output/                             # Résultats et visualisations
-├── models/                             # Modèles entraînés
-├── presentation/                       # Support de présentation
-├── requirements.txt                    # Dépendances
-└── README.md                           # Documentation
-```
 
 ---
 
