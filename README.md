@@ -42,21 +42,22 @@ Réaliser une étude de faisabilité complète comprenant :
    - Features texte : implémentation des approches bag-of-words, TF-IDF, Word2Vec, BERT, USE
    - Features image : implémentation des algorithmes SIFT/ORB/SURF et CNN Transfer Learning
 
-3. **Étude de faisabilité**
+4. **Étude de faisabilité**
    - Réduction dimensionnelle en 2D (PCA, t-SNE, UMAP)
    - Visualisation graphique des produits par catégorie
    - Mesure de similarité entre catégories réelles et clusters
 
-4. **Classification supervisée d'images**
+5. **Classification supervisée d'images**
+   - Transfer learning avec l'architecture ResNet50
    - Implémentation de data augmentation
    - Entraînement d'un modèle de classification d'images
    - Évaluation des performances
 
-5. **Test de l'API OpenFood Facts**
+7. **Test de l'API OpenFood Facts**
    - Développement d'un script pour l'extraction de produits
    - Création d'un fichier CSV avec les données structurées
 
-6. **Préparation de la présentation**
+8. **Préparation de la présentation**
    - Synthèse des résultats et des méthodes
    - Visualisations pertinentes
    - Création du support de présentation
@@ -69,16 +70,17 @@ Réaliser une étude de faisabilité complète comprenant :
    - Visualisations et résultats de l'étude de faisabilité
 
 2. [Notebook 2 : Classification supervisée d'images avec data augmentation | Colab](https://colab.research.google.com/drive/1MWZzFIE2hwoj35tkJy9pA0d76buZYDxb?usp=sharing)
+   - Transfer learning avec l'architecture ResNet50
    - Implémentation de data augmentation
    - Code d'entraînement et d'évaluation du modèle
    - Résultats de la classification
 
-3. [Script Python de test de l'API Openfoodfacts](openfoodfacts/produits_champagne.py)
+4. [Script Python de test de l'API Openfoodfacts](openfoodfacts/produits_champagne.py)
    - Code pour interagir avec l'API OpenFood Facts
    - Extraction des 10 premiers produits à base de "champagne"
    - Fichier CSV contenant les données structurées
 
-4. **Support de présentation**
+5. **Support de présentation**
    - Méthodologie et résultats de l'étude de faisabilité
    - Analyse de la classification supervisée
    - Présentation du test de l'API
