@@ -80,7 +80,7 @@ Réaliser une étude de faisabilité complète comprenant :
    - Extraction des 10 premiers produits à base de "champagne"
    - Fichier CSV contenant les données structurées
 
-5. **Support de présentation**
+5. [Support de présentation](https://docs.google.com/presentation/d/136HR5pYWK9EnaBPeFOcJlm2eUVGF2n9BXA7fVwVGW5A/edit?usp=sharing)
    - Méthodologie et résultats de l'étude de faisabilité
    - Analyse de la classification supervisée
    - Présentation du test de l'API
