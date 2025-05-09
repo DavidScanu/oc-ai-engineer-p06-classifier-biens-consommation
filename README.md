@@ -1,3 +1,5 @@
+![Projet 6 - Classifiez automatiquement des biens de consommation](images/oc-banner-project-06-1660-v1.png)
+
 # Projet 6 - Classifiez automatiquement des biens de consommation
 
 > 🎓 OpenClassrooms • Parcours [AI Engineer](https://openclassrooms.com/fr/paths/795-ai-engineer) | 👋 *Étudiant* : [David Scanu](https://www.linkedin.com/in/davidscanu14/)
